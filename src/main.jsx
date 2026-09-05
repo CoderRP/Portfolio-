@@ -203,7 +203,7 @@ function App() {
             <div className="hero-orbit" aria-hidden="true"><span/><span/><span/></div>
             <ProductWindow type="saathi" />
             <div className="profile-card">
-              <div className="profile-avatar">RP</div>
+              <img className="profile-avatar" src="/images/Profile.jpeg" alt="Rishi Pandey" />
               <div className="profile-copy">
                 <strong>Rishi Pandey</strong>
                 <span>Software Engineer</span>
