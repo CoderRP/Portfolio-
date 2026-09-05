@@ -178,6 +178,11 @@ function App() {
               <button className="pill primary" onClick={() => go('work')}>Explore my work <Icon name="arrow" size={15}/></button>
               <a className="pill secondary" href="mailto:rishipandey941@gmail.com">Email me <Icon name="mail" size={14}/></a>
             </div>
+            <div className="hero-badges" aria-label="Core strengths">
+              <span>Frontend</span>
+              <span>Full-stack</span>
+              <span>Problem solver</span>
+            </div>
             <div className="hero-note"><span>Based on a simple idea:</span> make the complicated feel obvious.</div>
           </div>
           <div className="hero-visual" data-reveal>

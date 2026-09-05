@@ -1,12 +1,24 @@
-# Rishi Pandey — Portfolio
+# Rishi Pandey Portfolio
 
-A clean, sharp, responsive React + Vite portfolio built around a premium dark/product-engineering aesthetic.
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-1d73ff?style=for-the-badge)](https://coderRP.github.io/Portfolio-/)
+[![GitHub](https://img.shields.io/badge/GitHub-CoderRP-181717?style=for-the-badge&logo=github)](https://github.com/CoderRP)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Rishi%20Pandey-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/rishi-pandey-835aa31bb)
 
-## Stack
+A polished, responsive portfolio website built with React + Vite, showcasing software engineering work, projects, technical stack, and contact information.
+
+## Features
+- Responsive single-page portfolio design
+- Project showcase cards
+- Skill grouping and experience timeline
+- Clean, modern visual styling
+- GitHub Pages deployment ready
+
+## Tech Stack
 - React
 - Vite
+- JavaScript
 - CSS
-- Inline SVG icons
+- SVG icons
 
 ## Run locally
 ```bash
@@ -14,12 +26,30 @@ npm install
 npm run dev
 ```
 
-## Build
+## Production build
 ```bash
 npm run build
 ```
 
-## Before publishing
-Replace the placeholder GitHub and LinkedIn destinations in `src/main.jsx` with the actual profile URLs. The resume supplied the platform references but not full URLs.
+## Deploy to GitHub Pages
+1. Update the repository homepage URL in the project if needed.
+2. Run:
+```bash
+npm run deploy
+```
+3. GitHub Pages will publish the generated `dist` folder.
 
-The content is based on the supplied resume, including CA Saathi, BookFlow, technical skills, education, professional development and certifications.
+## Project structure
+```bash
+src/
+  main.jsx
+  styles.css
+index.html
+package.json
+README.md
+```
+
+## Contact
+- GitHub: https://github.com/CoderRP
+- LinkedIn: https://www.linkedin.com/in/rishi-pandey-835aa31bb
+- Email: rishipandey941@gmail.com
