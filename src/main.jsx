@@ -125,7 +125,17 @@ function ProductWindow({ type }) {
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState('home');
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('portfolio-theme');
+    if (savedTheme) return savedTheme;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
   const nav = useMemo(() => [['home', 'Home'], ['work', 'Work'], ['skills', 'Stack'], ['about', 'About'], ['contact', 'Contact']], []);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('portfolio-theme', theme);
+  }, [theme]);
 
   useEffect(() => {
     const revealNodes = [...document.querySelectorAll('[data-reveal]')];
@@ -163,6 +173,9 @@ function App() {
           <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
             {nav.map(([id, label]) => <button key={id} className={active === id ? 'active' : ''} onClick={() => go(id)}>{label}</button>)}
           </div>
+          <button className="theme-toggle" onClick={() => setTheme((current) => current === 'light' ? 'dark' : 'light')} aria-label="Toggle theme">
+            {theme === 'light' ? '☾' : '☀'}
+          </button>
           <a className="nav-contact" href="mailto:rishipandey941@gmail.com">Get in touch <Icon name="arrow" size={14}/></a>
           <button className="menu-btn" onClick={() => setMenuOpen(v => !v)} aria-label="Toggle menu"><Icon name={menuOpen ? 'x' : 'menu'} size={19}/></button>
         </nav>
