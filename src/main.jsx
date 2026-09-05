@@ -177,6 +177,7 @@ function App() {
             <div className="hero-actions">
               <button className="pill primary" onClick={() => go('work')}>Explore my work <Icon name="arrow" size={15}/></button>
               <a className="pill secondary" href="mailto:rishipandey941@gmail.com">Email me <Icon name="mail" size={14}/></a>
+              <a className="pill secondary" href="/Rishi-Pandey-Resume.txt" download>Download resume</a>
             </div>
             <div className="hero-badges" aria-label="Core strengths">
               <span>Frontend</span>
@@ -188,6 +189,14 @@ function App() {
           <div className="hero-visual" data-reveal>
             <div className="hero-orbit" aria-hidden="true"><span/><span/><span/></div>
             <ProductWindow type="saathi" />
+            <div className="profile-card">
+              <div className="profile-avatar">RP</div>
+              <div className="profile-copy">
+                <strong>Rishi Pandey</strong>
+                <span>Software Engineer</span>
+              </div>
+              <div className="profile-metric"><b>2+</b><small>product builds</small></div>
+            </div>
             <div className="hero-caption"><span>Currently building</span><strong>CA Saathi</strong></div>
           </div>
         </section>
