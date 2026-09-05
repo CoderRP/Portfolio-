@@ -230,6 +230,11 @@ function App() {
             <h2>Calm systems.<br/><em>Strong foundations.</em></h2>
             <p>I’m a Computer Science engineering graduate who enjoys the parts of software that need both structure and judgment: clean interfaces, sensible data models, secure workflows and useful product decisions.</p>
             <p>Right now I’m focused on full-stack product development, especially SaaS workflows and AI-assisted experiences, while strengthening core software engineering fundamentals.</p>
+            <ul className="principles-list">
+              <li>Clear product thinking</li>
+              <li>Clean API and UI structure</li>
+              <li>Reliable engineering practices</li>
+            </ul>
           </div>
           <div className="about-list" data-reveal>
             <div className="timeline-item"><span>2026 — now</span><b>CA Saathi</b><small>Full-stack SaaS · AI workflows · PostgreSQL</small></div>
